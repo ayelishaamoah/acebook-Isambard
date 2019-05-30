@@ -18,6 +18,11 @@ class PostsController < ApplicationController
     redirect_to posts_url
   end
 
+  def update
+    Post.find(params[:id]).update(:message => post_params[:message])
+    redirect_to posts_url
+  end
+
   private
 
   def post_params

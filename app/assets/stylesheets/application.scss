@@ -307,16 +307,18 @@ body{
 }
 
 .icon-button {
-	 padding: 4px 4px;
-	 border-radius: 5px;
+	border-radius: 5px;
+ 	height: 30px;
+ 	width: 30px;
+ 	background-size: contain;
 }
 
 #delete-button {
-	border-radius: 5px;
-	height: 30px;
-	width: 30px;
-	background-size: contain;
 	background-image: url(asset_path('garbage.png'));
+}
+
+#edit-button {
+	background-image: url(asset_path('edit.png'));
 }
 
 .icon-image {

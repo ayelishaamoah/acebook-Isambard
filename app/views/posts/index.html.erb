@@ -24,9 +24,7 @@
         <p class="post-content"><%= post.message %></p>
         <% if current_user.id == post.user_id %>
           <%= button_to '', post_path(post), method: :delete, class:"icon-button", id:"delete-button"%>
-          <button class="icon-button" id="edit-button">
-          <%= image_tag "edit.png", class:"icon-image"%>
-          </button>
+          <%= button_to '', edit_post_path(post), method: :get, class:"icon-button", id:"edit-button"%>
         <% end %>
         <button class="icon-button" id="like-button">
         <%= image_tag "like.png", class:"icon-image"%>
