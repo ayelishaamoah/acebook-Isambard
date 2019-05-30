@@ -311,6 +311,14 @@ body{
 	 border-radius: 5px;
 }
 
+#delete-button {
+	border-radius: 5px;
+	height: 30px;
+	width: 30px;
+	background-size: contain;
+	background-image: url(asset_path('garbage.png'));
+}
+
 .icon-image {
 	height: 18px;
 	width: 18px;
