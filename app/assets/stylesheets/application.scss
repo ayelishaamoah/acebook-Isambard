@@ -358,8 +358,14 @@ body{
   transform: rotate(30deg);
 }
 
-#like-button {
+.like-button {
 	background-image: url(asset_path('like.png'));
+	height: 22px;
+	width: 22px;
+}
+
+#like-button {
+	border: 2px solid white;
 }
 
 .post-button-group {

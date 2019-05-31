@@ -29,12 +29,10 @@
 
         <% pre_like = post.likes.find { |like| like.user_id == current_user.id} %>
         <% if pre_like %>
-        <%= button_to post_like_path(post, pre_like), method: :delete, class:"icon-button", id: 'unlike-button' do %>
-        <%= image_tag "like.png", class:"icon-image"%>
+        <%= button_to post_like_path(post, pre_like), method: :delete, class:"icon-button like-button", id: 'unlike-button' do %>
           <% end %>
         <% else %>
-        <%= button_to post_likes_path(post), method: :post, class:"icon-button" do %>
-        <%= image_tag "like.png", class:"icon-image"%>
+        <%= button_to post_likes_path(post), method: :post, class:"icon-button like-button", id: 'like-button' do %>
           <% end %>
         <% end %>
 
