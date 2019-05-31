@@ -319,13 +319,36 @@ body{
 }
 
 .icon-button {
-	padding: 4px 4px;
 	border-radius: 5px;
+ 	height: 20px;
+ 	width: 20px;
+ 	background-size: cover;
+	margin-right: 5px;
+	border: none;
 }
 
-.icon-image {
-	height: 18px;
-	width: 18px;
+#like-number {
+	font-family:verdana;
+}
+
+#delete-button {
+	background-image: url(asset_path('garbage.png'));
+}
+
+#edit-button {
+	background-image: url(asset_path('pencil.png'));
+  transform: rotate(30deg);
+}
+
+#like-button {
+	background-image: url(asset_path('like.png'));
+}
+
+.post-button-group {
+	display: flex;
+	align-items: center;
+	width: fit-content;
+	justify-content: space-between;
 }
 
 #new-post-card {
