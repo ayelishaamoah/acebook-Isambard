@@ -405,3 +405,24 @@ body{
 	color: #777777;
 	font-family:verdana;
 }
+
+.comment {
+  min-height: 150px;
+  font-size: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  padding: 7px 7px 7px 7px;
+}
+
+.comment-number {
+  font-size: 14px;
+  font-family: verdana;
+	color: #777777;
+	margin-left: 10px;
+}
+
+.comment-block {
+	display: flex;
+	align-items: center;
+	width: fit-content;
+	justify-content: space-between;
+}

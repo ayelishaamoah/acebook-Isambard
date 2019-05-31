@@ -37,12 +37,19 @@
         <% end %>
 
         <span id="like_number"><%= post.likes.count %> <%= (post.likes.count) == 1 ? 'Like' : 'Likes'%></span>
+
+        </div>
+        <div class='comment-block'>
+          <form method="post" action="/posts/<%= post.id %>/comments">
+            <input name="message" type="text">
+            <input type="submit" value="Add Comment">
+          </form>
+          <%= button_to 'View All Comments', post_comments_path(post), method: :get, class:'comment_margin' %>
+          <div class="comment-number">
+            <%= post.comments.count %> <%= (post.comments.count) == 1 ? 'Comment' : 'Comments'%>
+          </div>
+        </div>
       </div>
-      <%= button_to 'View Comments', post_comments_path(post), method: :get %>
-      <form method="post" action="/posts/<%= post.id %>/comments">
-        <input name="message" type="text">
-        <input type="submit" value="Add Comment">
-      </form>
     <% end %>
   </div>
 </div>
