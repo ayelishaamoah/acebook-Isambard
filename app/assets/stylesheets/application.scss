@@ -1,5 +1,6 @@
 body{
-	margin: 0
+	margin: 0;
+  background-color: #dde0e4;
 }
 .fb-header-base{
 	width:100%;
@@ -188,6 +189,22 @@ body{
 	outline:none;
 }
 
+.button3{
+  // used by 'new posts' view
+  width:250px;
+  height:40px;
+  left:750px;
+  top:625px;
+  background-color: #365592;
+  border-radius: 2px;
+  border: 1px solid #29487d;
+  font-family:verdana;
+  font-size:18px;
+  color:white;
+  cursor:pointer;
+  outline:none;
+}
+
 #login-background {
 	background-color: #dde0e4;
   padding-top: 100px;
@@ -268,6 +285,7 @@ body{
   background-color: #ffffff;
   padding: 7px 12px;
   margin-left: 10px;
+  text-align: center;
 }
 
 #profile-image {
@@ -281,7 +299,7 @@ body{
 .news-feed {
 	background-color: #FFFFFF;
 	width: 750px;
-	margin: 0 auto 30px auto;
+	margin: auto auto 30px auto;
 	border-radius: 5px;
 }
 
@@ -353,6 +371,7 @@ body{
 
 #new-post-card {
 	padding: 7px 7px 0px 7px;
+  text-align: center;
 }
 .new-post-button {
 	color: white;
@@ -375,5 +394,3 @@ body{
 	color: #777777;
 	font-family:verdana;
 }
-
-

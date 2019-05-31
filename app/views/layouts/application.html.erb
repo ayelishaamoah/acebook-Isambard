@@ -14,7 +14,9 @@
       <p>
       <% if user_signed_in? %>
         <div id="logged-in-text">
-        Logged in as <%= current_user.username %>
+          <% if notice %><p><%= notice %></p>
+          <% else %>Logged in as <%= current_user.username %>
+          <% end %>
         </div>
         <div class="logout_edit_container">
         <%= link_to 'Edit profile', edit_user_registration_path, class: 'button-header'  %> 
@@ -27,9 +29,6 @@
     </div>
     <div class="fb-header"><span id="fb-header-font">Acebook</span></div>
 
-    <% if notice %>
-      <p class="alert alert-success"><%= notice %></p>
-    <% end %>
     <% if alert %>
       <p class="alert alert-danger"><%= alert %></p>
     <% end %>
