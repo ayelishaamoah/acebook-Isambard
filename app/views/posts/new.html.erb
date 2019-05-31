@@ -1,7 +1,7 @@
 <div class="fb-body-posts">
   <%= form_for @post do |form| %>
     
-    <%= form.text_field :message, id: "namebox", placeholder: "What's on your mind?" %>
+    <%= form.text_area :message, id: "namebox", placeholder: "What's on your mind?" %>
     <br>
       <%= form.submit "Submit", class: "button2" %>
   <% end %>
