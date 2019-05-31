@@ -188,6 +188,22 @@ body{
 	outline:none;
 }
 
+.button3{
+  // used by 'new posts' view
+  width:250px;
+  height:40px;
+  left:750px;
+  top:625px;
+  background-color: #365592;
+  border-radius: 2px;
+  border: 1px solid #29487d;
+  font-family:verdana;
+  font-size:18px;
+  color:white;
+  cursor:pointer;
+  outline:none;
+}
+
 #login-background {
 	background-color: #dde0e4;
   padding-top: 100px;
@@ -353,6 +369,7 @@ body{
 
 #new-post-card {
 	padding: 7px 7px 0px 7px;
+  text-align: center;
 }
 .new-post-button {
 	color: white;
