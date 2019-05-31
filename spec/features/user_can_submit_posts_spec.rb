@@ -8,15 +8,15 @@ RSpec.feature "Timeline", type: :feature do
   end
 
   scenario "Can submit posts and view them" do
-    new_post_hello_world
-    expect(page).to have_content("hello world")
+    create_post
+    expect(page).to have_content("Hello, world!")
   end
 
   scenario "Newest posts are shown first" do
-    new_post_hello_world
+    create_post
     click_link "New post"
     fill_in "What's on your mind?", with: "test 2"
     click_button "Submit"
-    expect(page.body.index('test 2')).to be < page.body.index('hello world')
+    expect(page.body.index('test 2')).to be < page.body.index('Hello, world!')
   end
 end

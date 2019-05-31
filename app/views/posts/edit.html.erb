@@ -1,0 +1,11 @@
+<div class="fb-body-posts">
+  Edit your post:
+  <br>
+
+  <%= form_for Post.find(params[:id]) do |form| %>
+
+    <%= form.text_field :message, id: "namebox", value: "#{Post.find(params[:id]).message}"%>
+    <br>
+      <%= form.submit "Submit", class: "button2" %>
+  <% end %>
+</div>

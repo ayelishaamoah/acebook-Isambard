@@ -6,8 +6,8 @@ def create_user_test_email_dot_com_1234567
   click_button "Create an account"
 end
 
-def new_post_hello_world
+def create_post
   click_link "New post"
-  fill_in "What's on your mind?", with: "hello world"
+  fill_in "What's on your mind?", with: "Hello, world!"
   click_button "Submit"
 end

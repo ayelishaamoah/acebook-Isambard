@@ -1,9 +1,9 @@
 <div class="fb-body-posts">
+  Add a new post:
   <%= form_for @post do |form| %>
-    
     <%= form.text_area :message, id: "namebox", placeholder: "What's on your mind?" %>
     <br>
       <%= form.submit "Submit", class: "button2" %>
   <% end %>
-  
+
 </div>
