@@ -308,9 +308,15 @@ body{
 
 .icon-button {
 	border-radius: 5px;
- 	height: 30px;
- 	width: 30px;
- 	background-size: contain;
+ 	height: 20px;
+ 	width: 20px;
+ 	background-size: cover;
+	margin-right: 5px;
+	border: none;
+}
+
+#like-number {
+	font-family:verdana;
 }
 
 #delete-button {
@@ -318,12 +324,19 @@ body{
 }
 
 #edit-button {
-	background-image: url(asset_path('edit.png'));
+	background-image: url(asset_path('pencil.png'));
+  transform: rotate(30deg);
 }
 
-.icon-image {
-	height: 18px;
-	width: 18px;
+#like-button {
+	background-image: url(asset_path('like.png'));
+}
+
+.post-button-group {
+	display: flex;
+	align-items: center;
+	width: fit-content;
+	justify-content: space-between;
 }
 
 #new-post-card {
