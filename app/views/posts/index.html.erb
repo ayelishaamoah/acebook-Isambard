@@ -26,10 +26,21 @@
           <%= button_to '', post_path(post), method: :delete, class:"icon-button", id:"delete-button"%>
           <%= button_to '', edit_post_path(post), method: :get, class:"icon-button", id:"edit-button"%>
         <% end %>
-        <%= button_to '', post_path(post), class:"icon-button", id:"like-button"%>
-        <span id="like-number">0</span>
-        </div>
+
+        <% pre_like = post.likes.find { |like| like.user_id == current_user.id} %>
+        <% if pre_like %>
+        <%= button_to post_like_path(post, pre_like), method: :delete, class:"icon-button", id: 'unlike-button' do %>
+        <%= image_tag "like.png", class:"icon-image"%>
+          <% end %>
+        <% else %>
+        <%= button_to post_likes_path(post), method: :post, class:"icon-button" do %>
+        <%= image_tag "like.png", class:"icon-image"%>
+          <% end %>
+        <% end %>
+
+        <span id="like_number"><%= post.likes.count %> <%= (post.likes.count) == 1 ? 'Like' : 'Likes'%></span>
       </div>
+
     <% end %>
   </div>
 </div>
