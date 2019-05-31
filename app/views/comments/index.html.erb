@@ -1,0 +1,6 @@
+<% @comments.reverse.each do |comment| %>
+  <div class="comment">
+    <h4 class="comment-heading">Posted by <%= User.find(comment.user_id).username %> </h4>
+    <p class="comment-timestamp">Posted: <%= comment.created_at.in_time_zone("Europe/London").strftime("%e %B %Y at %H:%M") %></p>
+    <p class="comment-content"><%= comment.message %></p>
+<% end %>
