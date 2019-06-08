@@ -6,7 +6,8 @@
 
 
   [This is the engineering project outline.](https://github.com/makersacademy/course/tree/master/engineering_projects/rails)
-
+  
+  [Here is a link](https://github.com/Hannah-Frost/acebook-Isambard/projects/1) to our project board
 
 ## How to View and Use App
 
